@@ -115,11 +115,11 @@ td:last-child, th:last-child {
 }
 
 td.notice-1 {
-  background-color: #EEEEEE; /*change to stridded background*/
+  background-color: #DEDBD6;
 }
 
 td.notice-2 {
-  background-color: #DEDBD6;
+  background-color: #E1E0BF;
 }
 
 .table-wrapper {
@@ -159,11 +159,10 @@ td.notice-2 {
 
 .button-link {
   display: inline-block;
-  padding: 0 1em;
+  padding: 0.2em 1.2em;
   text-decoration: none;
-  background-color: rgba(37, 37, 37, 0.9);
+  background-color: rgba(0, 114, 188, 0.7);
   color: #EDEDED;
-  border: 1px solid rgba(37, 37, 37, 0.9);
 }
 
 .button-link:hover {
@@ -228,14 +227,13 @@ td.notice-2 {
 }
 
 #street-view {
-  margin: 6em 2em;
+  margin: 4em 0em;
 }
 
 #street-view > a {
   display: block;
   margin: auto;
   width: 100%;
-  max-width: 28em;
 }
 
 #street-view img {
@@ -246,7 +244,6 @@ td.notice-2 {
   display: block;
   padding: 1em;
   background-color: #E0C35D;
-  border: 1px solid #252525;
   text-align: center;
   text-transform: uppercase;
 }
@@ -286,13 +283,8 @@ td.notice-2 {
   font-size: 1.8em;
 }
 
-.notice-block-2-wrapper {
-  background-color: rgba(222, 219, 217, 0.6);
-  padding: 4em 6em;
-}
-
 .notice-block-2 {
-  border: 1px solid #252525;
+  border: 4em solid rgba(222, 219, 217, 0.5);
 }
 
 .notice-block-2 > h4 {

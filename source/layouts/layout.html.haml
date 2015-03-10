@@ -8,5 +8,6 @@
     %title= current_page.data.title || "The Middleman"
     = stylesheet_link_tag "normalize", "skeleton", "all"
     = javascript_include_tag  "all"
+    %link{rel: "icon", type: "image/x-icon", href: "images/favicon.ico"}
   %body{class: page_classes}
     = yield
