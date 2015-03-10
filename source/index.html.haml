@@ -6,9 +6,14 @@ title: Maelstrom Lab
 
   .row
     .twelve.columns
-      %h1 Maelström Lab
-      .event-motto Échanges de savoir-faire et croisements de disciplines.
-      .event-date Les 8,9,10 mai 2015 à METTRAY
+      #header
+        %h1#logo
+          %img{src: "images/logo.svg", alt: "Maelström Lab"}
+        .wrapper
+          #event-motto Échanges de savoir-faire et croisements de disciplines.
+        .wrapper
+          #event-date
+            Les 8,9,10 mai 2015 à METTRAY.
 
   .row
     .twelve.columns
@@ -17,8 +22,9 @@ title: Maelstrom Lab
   .row
     .six.columns
       %blockquote
-        Le maelström est un puissant tourbillon marin, un mouvement d'agitation intense qui vous entraîne irrésistiblement. --
-        <a href="https://fr.wikipedia.org/wiki/Maelstrom">Wikipedia</a>
+        Le maelström est un puissant tourbillon marin, un mouvement d'agitation intense qui vous entraîne irrésistiblement.
+        %br
+        = '-- <a href="https://fr.wikipedia.org/wiki/Maelstrom">Wikipedia</a>'
       %p
         Le maelström-lab est un rassemblement d'une soixantaine de personne et une immersion dans un joli coin de la campagne tourangelle durant un week-end de trois jours.
         Il se donne pour but la création et la réflexion collective et participative au sein de multiples ateliers et groupes de travail.
@@ -35,63 +41,80 @@ title: Maelstrom Lab
         C'est dans un esprit DIY (Do It Yourself) à la campagne, dans le fait même de se retrouver quelques jours avec des inconnus,
         de mettre en pratique ses idées jamais tentées, de s’amuser que l'on essaiera de créer l’émulation et l’émulsion, une effervescence créative et débrouillarde.
 
-    .row
-      .twelve.columns
+  .row
+    .twelve.columns
+      .wrapper
         %img{src: "images/atelier.jpg", alt: "Atelier de travail du bois."}
+      %hr
+      .step
+        .text Étape.00
+        .line
 
-    .row
-      .seven.columns
-        %img{src: "images/schema_des_croisements.png", alt: "Proposition de pôles à organiser et désorganiser selon les usages."}
-        .legend Schéma des croisements : proposition de pôles à organiser et désorganiser selon les usages.
-      .five.columns
-        %h4 Comment ça marche ?
-        %p
-          Très simplement.
-          %br
-          <em>Les matinées</em> : au cours d' une assemblée collective, chacun proposera à l'envie, une piste d'expérimentation, un sujet à discuter, un objet à réaliser,
-          une initiation à une technique ou se laissera simplement emmener par un projet qui l’intéresse.
-          Suite à quoi des groupes se formeront (puis sûrement se déformeront) pour une durée totalement libre.
-          %br
-          <em>Les soirées</em> : elles seront réservées à la détente, à la musique, à la danse, et au repos.
-        %h4 Et en terme de logistique ?
-        %p
-          Chacun ramène ce qu'il peut comme outils ou matériaux, le forum (lien ci dessous) sert à gérer les prêts, les dons, les possibilités de récupération
-          et la logistique en général.
-          Il y aura déjà beaucoup de choses sur place pour ceux qui ne peuvent rien apporter.
-          Une commission repas est en cours d'organisation, libre à vous de vous inscrire dessus.
-          L'hébergement se fait sur place, penser à ramener camion, tente et/ou matelas (possibilité de dortoir).
-        .guide-notice Suivre les chapitres détaillés ci-dessous.
+  .row
+    .eight.columns
+      #schema.wrapper
+        %img{src: "images/schema_des_croisements.svg", alt: "Proposition de pôles à organiser et désorganiser selon les usages."}
+      .legend Schéma des croisements : proposition de pôles à organiser et désorganiser selon les usages.
+    .four.columns
+      %h4 Comment ça marche ?
+      %p
+        Très simplement.
+        %br
+        <em>Les matinées</em> : au cours d' une assemblée collective, chacun proposera à l'envie, une piste d'expérimentation, un sujet à discuter, un objet à réaliser,
+        une initiation à une technique ou se laissera simplement emmener par un projet qui l’intéresse.
+        Suite à quoi des groupes se formeront (puis sûrement se déformeront) pour une durée totalement libre.
+        %br
+        <em>Les soirées</em> : elles seront réservées à la détente, à la musique, à la danse, et au repos.
+      %h4 Et en terme de logistique ?
+      %p
+        Chacun ramène ce qu'il peut comme outils ou matériaux, le forum (lien ci dessous) sert à gérer les prêts, les dons, les possibilités de récupération
+        et la logistique en général.
+        Il y aura déjà beaucoup de choses sur place pour ceux qui ne peuvent rien apporter.
+        Une commission repas est en cours d'organisation, libre à vous de vous inscrire dessus.
+        L'hébergement se fait sur place, penser à ramener camion, tente et/ou matelas (possibilité de dortoir).
+      .notice-block-1 Suivre les chapitres détaillés ci-dessous.
 
-    .row
-      .twelve.columns
-        %h3 Ou ?
+  .row
+    .twelve.columns
+      %hr
+      .step
+        .text Étape.01
+        .line
+      %h3 Ou ?
 
-    .row
-      .six.columns
-        %h4 La barre, Mettray (37).
-        %p Dans un domaine avec petite cuisine et grandes dépendances (grange, hangars, barnums selon la météo, forêt et lac), plusieurs espaces dédiés aux divers ateliers.
-        %img{src: "images/plan.jpg", alt: "Plan du site."}
-        %p Comment venir?
-        %ul
-          %li Covoiturage (rubrique sur le forum).
-          %li Bus.
-      .six.columns
+  .row
+    .six.columns
+      %h4 La barre, Mettray (37).
+      %p Dans un domaine avec petite cuisine et grandes dépendances (grange, hangars, barnums selon la météo, forêt et lac), plusieurs espaces dédiés aux divers ateliers.
+      #plan.wrapper
+        %img{src: "images/plan.svg", alt: "Plan du site."}
+      %h5 Comment venir?
+      %ul
+        %li Covoiturage (rubrique sur le forum).
+        %li Bus.
+    .six.columns
+      #street-view.wrapper
         %a{href: "http://intergalactique.360degres.info/visite-virtuelle/", title: "Visite virtuelle du lieu."}
           %img{src: "/images/visite_virtuelle.png", alt: "Logo de visite virtuelle du lieu."}
 
-    .row
-      .twelve.columns
-        %h3 Quand ?
+  .row
+    .twelve.columns
+      %hr
+      .step
+        .text Étape.02
+        .line
+      %h3 Quand ?
 
-    .row
-      .seven.columns
-        %p 1 week end de 3 jours 8, 9, 10 mai 2015. Possibilité d'arriver le jeudi 7 au soir.
+  .row
+    .eight.columns
+      %p 1 week end de 3 jours <u>8, 9, 10 mai 2015</u>. Possibilité d'arriver le jeudi 7 au soir.
+      .table-wrapper
         %table
           %tr
             %th Jeudi
-            %th Vendredi
-            %th Samedi
-            %th Dimanche
+            %th.highlight Vendredi
+            %th.highlight Samedi
+            %th.highlight Dimanche
           %tr
             %td
             %td assemblée, ice-breaking, ateliers
@@ -99,26 +122,29 @@ title: Maelstrom Lab
             %td assemblée, ice-breaking, ateliers
           %tr
             %td
-            %td Repas
-            %td Repas
-            %td Repas
+            %td.notice-1 Repas
+            %td.notice-2 Repas
+            %td.notice-2 Repas
           %tr
             %td
             %td ateliers
             %td ateliers
             %td debrief, rangement
           %tr
-            %td Repas
-            %td Repas
-            %td Repas
+            %td.notice-1 Repas
+            %td.notice-2 Repas
+            %td.notice-2 Repas
             %td
           %tr
             %td installation, ice-breaking
             %td soirée
             %td soirée, feu d'artifice
             %td
-        .legend Le site reste ouvert, en visite libre, durant les 3 jours.
-      .five.columns
+      .legend Le site reste ouvert, en visite libre, durant les 3 jours.
+    .four.columns
+      .warning-block
+        .warning-block-header
+          %img{src: "images/warning.svg", alt: "Warning"}
         %h4 AG spéciale d'Avril.
         %p
           Le samedi 25 Avril aura lieu une AG ouverte au public sur le lieu de l'événement.
@@ -126,76 +152,104 @@ title: Maelstrom Lab
           Au programme: présentation du projet, concert(s), ateliers DIY, récolte des premières cotisations pour les courses de nourriture
           (25€ pour les 3 jours par participants).
 
-    .row
-      .twelve.columns
-        %h3 Comment Manger ?
+  .row
+    .twelve.columns
+      %hr
+      .step
+        .text Étape.03
+        .line
+      %h3 Comment Manger ?
 
-    .row
-      .six.columns
-        %p
-          Une prise en charge des repas du vendredi soir au dimanche midi (avec petit-dej et goûter) est prévue.
-          Pour cela une participation aux frais est demandée (à titre indicatif environ 25 euros pour les 3 jours, adaptée selon le nombre de repas pris).
-          Le jeudi soir et le vendredi midi, chacun ramène sa spécialité ou son "kiffe culinaire" pour un repas en commun convivial.
-        %p
-          Pour rester dans la philosophie de l'évenement, les repas du vendredi soir jusqu'au dimanche midi seront réalisés par les participants à tour de rôle
-          et sur inscription (le matériel et les courses seront présents sur place).
-      .six.columns
-        %h4 L'hebergement
-        %p
-          Le site de 10 hectares comporte un espace de camping  et un grenier qui pourra faire office de dortoir.
-          Munissez vous de vos tentes, camions ou matelas.
+  .row
+    .six.columns
+      %p
+        Une prise en charge des repas du vendredi soir au dimanche midi (avec petit-dej et goûter) est prévue.
+        Pour cela une participation aux frais est demandée (à titre indicatif environ 25 euros pour les 3 jours, adaptée selon le nombre de repas pris).
+        Le jeudi soir et le vendredi midi, chacun ramène sa spécialité ou son "kiffe culinaire" pour un repas en commun convivial.
+      %p
+        Pour rester dans la philosophie de l'évenement, les repas du vendredi soir jusqu'au dimanche midi seront réalisés par les participants à tour de rôle
+        et sur inscription (le matériel et les courses seront présents sur place).
+    .six.columns
+      .notice-block-2-wrapper
+        .notice-block-2
+          %h4 L'hebergement
+          %p
+            Le site de 10 hectares comporte un espace de camping  et un grenier qui pourra faire office de dortoir.
+            Munissez vous de vos tentes, camions ou matelas.
 
-    .row
-      .twelve.columns
-        %h3 Trousseau de survie.
+  .row
+    .twelve.columns
+      %hr
+      .step
+        .text Étape.04
+        .line
 
-    .row
-      .two.columns
+  .row
+    .six.columns.offset-by-six.columns
+      %h3 Trousseau de survie.
+
+  .row
+    .two.columns
+      .wrapper.border
         %img{src: "images/figure_01.png", alt: "Illustration figure 1."}
-        .legend Figure.01
-      .two.columns
+      .legend Figure.01
+    .two.columns
+      .wrapper.border
         %img{src: "images/figure_02.png", alt: "Illustration figure 2."}
-        .legend Figure.02
-      .two.columns
+      .legend Figure.02
+    .two.columns
+      .wrapper.border
         %img{src: "images/figure_03.png", alt: "Illustration figure 3."}
-        .legend Figure.03
-      .six.columns
-        %ul
-          %li
-            Trousse de toilette + serviette de bain + savon
-            (type savon de marseille ou savon noir car douche en extérieur et évacuation dans la nature).
-          %li Matelas avec duvet, tente ou camion pour dormir.
-          %li De quoi manger et mettre en commun pour le jeudi soir (pour ceux qui seront présents) et le vendredi midi (une spécialité ou un plat préféré).
-          %li 25€ pour participer aux frais des 4 repas/petits-dej/gouters qui seront préparés sur place durant le week end.
-          %li Bottes, K-way et maillot de bain.
-          %li Outils, récupération de matériel, petits outillages divers à mettre en commun.
-          %li Bonne humeur et convivialité
-          %li ...
+      .legend Figure.03
+    .six.columns
+      %ul
+        %li
+          Trousse de toilette + serviette de bain + savon
+          (type savon de marseille ou savon noir car douche en extérieur et évacuation dans la nature).
+        %li Matelas avec duvet, tente ou camion pour dormir.
+        %li De quoi manger et mettre en commun pour le jeudi soir (pour ceux qui seront présents) et le vendredi midi (une spécialité ou un plat préféré).
+        %li 25€ pour participer aux frais des 4 repas/petits-dej/gouters qui seront préparés sur place durant le week end.
+        %li Bottes, K-way et maillot de bain.
+        %li Outils, récupération de matériel, petits outillages divers à mettre en commun.
+        %li Bonne humeur et convivialité
+        %li ...
 
-    .row
-      .twelve.columns
-        %h3 Inscription
-        .note (obligatoire)
+  .row
+    .twelve.columns
+      %hr
+      .step
+        .text Étape.05
+        .line
+      %h3 Inscription
+      .sub-title (obligatoire)
 
-    .row
-      .six.columns
-        %p.warning Priorité aux participants disponibles les 3 jours. Événement limité à 60 personnes.
-        %p Elle se fait sur le forum en se créant un profil et en remplissant le formulaire.
-        %h4 Le forum
-        %p
-          Le forum sert à l'organisation, à la présentation de chacun, à organiser la récupération, le prêt et la mutualisation du matériel et des outils
-          et à faire émerger des débuts de discussions, de projets.
-        %a{href: "http://aninassawa.forumprod.com/forum.php", title: "Le forum"} Accéder au forum.
-        %h4 Le formulaire
-        %p Le formulaire permet de gérer la présence de chacun.
-        %a{href: "https://docs.google.com/forms/d/1otP-CLp8QSNXI8f7zYItIPbpKGuv49iP5-WbcMIVSI0/edit?pli=1", title: "Le formulaire"} Accéder au formulaire.
-      .six.columns
-        %img{src: "images/house.jpg", alt: "Photo du site."}
+  .row
+    .six.columns
+      .warning-wrapper
+        .warning Priorité aux participants disponibles les 3 jours. Événement limité à 60 personnes.
+      %p Elle se fait sur le forum en se créant un profil et en remplissant le formulaire.
+      %h4 Le forum
+      %p
+        Le forum sert à l'organisation, à la présentation de chacun, à organiser la récupération, le prêt et la mutualisation du matériel et des outils
+        et à faire émerger des débuts de discussions, de projets.
+        %a.button-link{href: "http://aninassawa.forumprod.com/forum.php", title: "Le forum"} Accéder au forum.
+      %h4 Le formulaire
+      %p
+        Le formulaire permet de gérer la présence de chacun.
+        %a.button-link{href: "https://docs.google.com/forms/d/1otP-CLp8QSNXI8f7zYItIPbpKGuv49iP5-WbcMIVSI0/edit?pli=1", title: "Le formulaire"} Accéder au formulaire.
+    .six.columns
+      .wrapper
+        %img{src: "images/house.png", alt: "Photo du site."}
 
-    .row
-      .twelve.columns
+  .row
+    .twelve.columns
+      %hr
+      .step
+        .text Étape.06
+        .line
+      #footer
         %h3 Comment nous joindre ?
         %p Si vous avez des questions, n'hésitez pas à nous contacter, on sera ravi de vous répondre (si si, on existe en vrai !).
-        %ul
-          %li <a href="mailto:maelstrom@eggnet.io">maelstrom@eggnet.io</a>
-          %li <a href="tel:0619801635">06 19 80 16 35</a>
+        %ul.contact-list
+          %li.contact-email <a href="mailto:maelstrom@eggnet.io">maelstrom@eggnet.io</a>
+          %li.contact-phone <a href="tel:0619801635">06 19 80 16 35 (Élsa)</a>
