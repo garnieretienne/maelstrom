@@ -89,6 +89,14 @@ u {
   background-color: rgba(37, 37, 37, 0.9);
 }
 
+table {
+  width: 100%;
+}
+
+td, th {
+  text-align: center;
+}
+
 th {
   text-align: center;
   text-transform: uppercase;
@@ -119,11 +127,15 @@ td:last-child, th:last-child {
 }
 
 td.notice-1 {
+  text-transform: uppercase;
   background-color: #DEDBD6;
+  text-align: center;
 }
 
 td.notice-2 {
+  text-transform: uppercase;
   background-color: #E1E0BF;
+  text-align: center;
 }
 
 .table-wrapper {
