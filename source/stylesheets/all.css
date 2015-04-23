@@ -82,13 +82,6 @@ hr {
   padding-top: 0.2em;
 }
 
-u {
-  padding: 0 0.2em;
-  text-decoration: none;
-  color: #EDEDED;
-  background-color: rgba(37, 37, 37, 0.9);
-}
-
 table {
   width: 100%;
 }
@@ -275,13 +268,13 @@ td.notice-2 {
 
 .warning-block {
   border: 1px solid #252525;
-  text-align: center;
 }
 
 .warning-block-header {
   padding: 0.6em;
   background-color: rgba(37, 37, 37, 0.9);
   color: #EDEDED;
+  text-align: center;
 }
 
 .warning-block-header > img {
@@ -289,11 +282,19 @@ td.notice-2 {
   color: #EDEDED;
 }
 
-.warning-block > p {
+.warning-block > p, .warning-block > ul {
+  font-size: 1.1em;
+  margin: 1em 0;
   padding: 0em 2em;
 }
 
+.warning-block > p {
+  font-size: 1em;
+}
+
 .warning-block > h4 {
+  display: block;
+  text-align: center;
   margin: 1em 0;
   padding: 0;
   background-color: inherit;
