@@ -16,6 +16,10 @@ body {
   color: #252525;
 }
 
+del, del > * {
+  text-decoration: line-through !important;
+}
+
 h1 > img {
   margin: auto;
   max-width: 80%;
