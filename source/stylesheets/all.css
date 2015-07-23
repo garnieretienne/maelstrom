@@ -5,12 +5,14 @@
 /* Black Opacity: rgba(37, 37, 37, 0.9) /*
 /* Yellow:        #E0C35D */
 /* Yello Opacity: rgba(224, 195, 93, 0.8) /*
+/* Blue:          #4999d8 */
+/* Blue Opacity   rgba(73, 153, 216, 0.8) */
 /* White:         #EDEDED */
 /* Gray:          #DEDBD6 */
 /* Gray Opacity:  rgba(222, 219, 217, 0.6) */
 
 body {
-  background-image: url(/images/pattern.jpg);
+  background-image: url(/images/pattern.png);
   background-color: #EDEDED;
   font-family: 'Source Code Pro';
   color: #252525;
@@ -55,7 +57,7 @@ li {
 blockquote {
   margin: 1em 0em;
   padding-left : 1em;
-  border-left: 1px solid #E0C35D;
+  border-left: 1px solid #4999d8;
   font-style: italic;
 }
 
@@ -103,7 +105,7 @@ th {
 }
 
 th.highlight {
-  background-color: rgba(224, 195, 93, 0.8);
+  background-color: rgba(73, 153, 216, 0.8);
 }
 
 td {
@@ -182,7 +184,7 @@ td.notice-2 {
   padding: 0.2em 1.2em;
   margin: 1em 0;
   text-decoration: none;
-  background-color: rgba(0, 114, 188, 0.7);
+  background-color: rgba(224, 195, 93, 1);
   color: #EDEDED;
 }
 
@@ -197,6 +199,7 @@ td.notice-2 {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto;
+  margin-bottom: 2em;
 }
 
 #footer {
@@ -229,10 +232,24 @@ td.notice-2 {
   padding: 0.4em 1em;
   padding-left: 6em;
   margin-left: -6em;
-  background-color: rgba(224, 195, 93, 0.8);
+  background-color: rgba(73, 153, 216, 0.8);
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 200;
+}
+
+#motto {
+  display: inline-block;
+  padding: 0 1em;
+  margin-left: 2em;
+  font-size: 1.6em;
+  font-style: italic;
+  text-align: left;
+  /*margin-left: 4em;*/
+  /*height: 2em;
+  line-height: 2em;*/
+
+  background-color: rgba(73, 153, 216, 0.4);
 }
 
 #plan {
@@ -259,7 +276,7 @@ td.notice-2 {
 .notice-block-1 {
   display: block;
   padding: 1em;
-  background-color: #E0C35D;
+  background-color: #4999d8;
   text-align: center;
   text-transform: uppercase;
 }
@@ -316,7 +333,7 @@ td.notice-2 {
   display: block;
   margin: 0em 0;
   padding: 0.4em;
-  background-color: rgba(224, 195, 93, 0.8);
+  background-color: rgba(73, 153, 216, 0.8);
   color: inherit;
   text-align: center;
   font-weight: 200;
