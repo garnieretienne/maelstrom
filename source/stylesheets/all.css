@@ -105,12 +105,13 @@ th {
 }
 
 th.highlight {
-  background-color: rgba(73, 153, 216, 0.8);
+  background-color: rgba(73, 153, 216, 0.6);
 }
 
 td {
   border-left: 1px dotted #252525;
   border-right: 1px dotted #252525;
+  line-height: 3em;
 }
 
 td, th, td:first-child, td:last-child, th:first-child, th:last-child {
@@ -137,8 +138,17 @@ td.notice-2 {
   text-align: center;
 }
 
+.news {
+  margin: 1em 0;
+  padding: 0em 2em;
+  border: 2px solid #4999d8;
+}
+
+.news-title {
+  font-size: 1.2em;
+}
+
 .time {
-  /*text-align: right;*/
   font-size: 0.8em;
   font-style: italic;
   color: #797979;
@@ -184,13 +194,13 @@ td.notice-2 {
   padding: 0.2em 1.2em;
   margin: 1em 0;
   text-decoration: none;
-  background-color: rgba(224, 195, 93, 1);
-  color: #EDEDED;
+  border: 1px solid #4999d8;
+  color: #4999d8;
 }
 
 .button-link:hover {
-  color: inherit;
   background-color: inherit;
+  border: 1px solid transparent;
 }
 
 #header {
@@ -217,7 +227,7 @@ td.notice-2 {
   height: 100%;
 }
 
-#event-motto {
+#maelstrom-motto {
   display: inline-block;
   padding: 0.4em 1em;
   padding-left: 4em;
@@ -229,27 +239,25 @@ td.notice-2 {
 
 #event-date {
   display: inline-block;
-  padding: 0.4em 1em;
-  padding-left: 6em;
-  margin-left: -6em;
+  padding: 0.4em 2em;
+  padding-left: 4em;
+  margin-left: -4em;
   background-color: rgba(73, 153, 216, 0.8);
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 200;
 }
 
-#motto {
+#event-motto {
   display: inline-block;
   padding: 0 1em;
   margin-left: 2em;
   font-size: 1.6em;
-  font-style: italic;
+  font-style: normal;
+  font-weight: 200;
   text-align: left;
-  /*margin-left: 4em;*/
-  /*height: 2em;
-  line-height: 2em;*/
 
-  background-color: rgba(73, 153, 216, 0.4);
+  background-color: rgba(73, 153, 216, 0.6);
 }
 
 #plan {
@@ -276,7 +284,7 @@ td.notice-2 {
 .notice-block-1 {
   display: block;
   padding: 1em;
-  background-color: #4999d8;
+  background-color: rgba(73, 153, 216, 0.6);
   text-align: center;
   text-transform: uppercase;
 }
@@ -304,13 +312,13 @@ td.notice-2 {
 }
 
 .warning-block > p, .warning-block > ul {
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 1em 0;
   padding: 0em 2em;
 }
 
 .warning-block > p {
-  font-size: 1em;
+  text-align: center;
 }
 
 .warning-block > h4 {
@@ -326,7 +334,7 @@ td.notice-2 {
 }
 
 .notice-block-2 {
-  border: 1em solid rgba(222, 219, 217, 0.5);
+  border: 1em solid rgba(73, 153, 216, 0.6);
 }
 
 .notice-block-2 > h4 {
