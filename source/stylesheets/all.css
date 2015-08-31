@@ -88,6 +88,17 @@ hr {
   padding-top: 0.2em;
 }
 
+.subscribe-link {
+  text-align: center;
+  background-color: #252525;
+  padding: 0.5em;
+}
+
+.subscribe-link > a {
+  color: white;
+  text-transform: uppercase;
+}
+
 table {
   width: 100%;
 }
@@ -140,12 +151,17 @@ td.notice-2 {
 
 .news {
   margin: 1em 0;
-  padding: 0em 2em;
+  padding: 2em;
   border: 2px solid #4999d8;
+}
+
+.new p {
+  margin: 1em;
 }
 
 .news-title {
   font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
 .time {
@@ -390,6 +406,10 @@ td.notice-2 {
 }
 
 @media (min-width: 1000px) {
+
+  .news-title {
+    margin-top: 4em;
+  }
 
   h1 > img {
     margin: 0;
