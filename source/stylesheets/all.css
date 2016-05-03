@@ -14,7 +14,7 @@
 /* Green Opacity: rgba(72, 219, 73, 0.6) */
 
 body {
-  background-image: url(/images/pattern.png);
+  background-image: url(/images/pattern2.png);
   background-color: #EDEDED;
   font-family: 'Source Code Pro';
   color: #252525;
@@ -220,6 +220,12 @@ td .note {
   width: 100%;
 }
 
+.limit {
+  display: block;
+  max-width: 50%;
+  margin: auto;
+}
+
 .border {
   border: 1px solid #252525;
 }
@@ -261,10 +267,6 @@ td .note {
 
 #header {
   padding: 0;
-  background-image: url(/images/maelstrom.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
   margin-bottom: 2em;
 }
 
@@ -307,17 +309,23 @@ td .note {
 #event-motto {
   display: inline-block;
   padding: 0 1em;
-  margin-left: 2em;
+  margin-left: 1em;
   font-size: 1.6em;
   font-style: normal;
   font-weight: 200;
   text-align: left;
+}
 
-  background-color: rgba(72, 219, 73, 0.8);
+#event-motto > img {
+  height: 2em;
 }
 
 #plan {
   margin-bottom: 2em;
+}
+
+#plan-map {
+  max-width: 100%;
 }
 
 #street-view {
@@ -434,10 +442,6 @@ td .note {
   content: url(/images/phone.svg);
 }
 
-.pizza {
-  display: none;
-}
-
 @media (min-width: 550px) {
 
   body {
@@ -455,8 +459,9 @@ td .note {
     padding: 10em 0;
     background-image: url(/images/maelstrom.png);
     background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto 100%;
+    background-position: top right;
+    background-size: contain;
+    margin-bottom: 2em;
   }
 
   #schema {
@@ -467,8 +472,8 @@ td .note {
     margin-left: -2em;
   }
 
-  .pizza {
-    display: block;
+  .limit {
+    max-width: none;
   }
 
   .notice-block-2 {

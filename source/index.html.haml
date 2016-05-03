@@ -8,7 +8,7 @@ title: Maelström Lab
     .twelve.columns
       #header
         %h1#logo
-          %img{src: "images/logo.svg", alt: "Maelström Lab"}
+          %img{src: "images/logo.png", alt: "Maelström Lab"}
         .wrapper
           #maelstrom-motto Échanges de savoir-faire et croisements de disciplines
         .wrapper
@@ -16,7 +16,7 @@ title: Maelström Lab
             Les 5, 6, 7 et 8 mai 2016 À METTRAY
         .wrapper
           #event-motto
-            "Retour...le futur"
+            %img{src: "images/motto.gif", alt: "Maelström Lab"}
 
   .row
     .twelve.columns
@@ -42,7 +42,7 @@ title: Maelström Lab
   .row
     .twelve.columns
       .wrapper
-        %img{src: "images/photo_1.jpg", alt: "Atelier Epouvantail."}
+        %img{src: "images/photo_1.jpg", alt: "Work In Progress"}
       .news
         .row
           .six.columns
@@ -67,7 +67,7 @@ title: Maelström Lab
     .eight.columns
       %h4 Schéma des croisements
       %p Proposition de pôles à organiser et désorganiser selon les usages :
-      #schema.wrapper
+      #schema.wrapper.limit
         %img{src: "images/schema_des_croisements.png", alt: "Proposition de pôles à organiser et désorganiser selon les usages."}
     .four.columns
       %h4 Comment ça marche ?
@@ -98,7 +98,7 @@ title: Maelström Lab
       %p Dans un domaine avec petite cuisine et grandes dépendances (grange, hangars, barnums selon la météo, forêt et lac), plusieurs espaces dédiés aux divers ateliers.
       #plan.wrapper
         %a{href: "https://www.google.fr/maps/place/La+Barre,+37390/@47.4542814,0.659999,15z/data=!3m1!4b1!4m2!3m1!1s0x47e32aa928e973cf:0x6a6c66cba7dc6459?hl=en", title: "Plan Google Maps", target: "_blank"}
-          %img{src: "images/plan.svg", alt: "Plan du site."}
+          %img#plan-map{src: "images/plan.png", alt: "Plan du site."}
       %a{href: "https://www.google.fr/maps/place/La+Barre,+37390/@47.4542814,0.659999,15z/data=!3m1!4b1!4m2!3m1!1s0x47e32aa928e973cf:0x6a6c66cba7dc6459?hl=en", title: "Plan Google Maps", class: "button-link"}
         Plan Google Maps
       %h5 Comment venir?
@@ -106,8 +106,8 @@ title: Maelström Lab
         %li Covoiturage
         %li Depuis Tours centre : Tram + Bus (<a href="https://www.filbleu.fr/images/infosvoyageurs/ficheslignes/reseau_hiver_fev_2016/Bus_52.pdf" title="Information Fil-Bleu ligne 52" target="_blank">ligne 52</a>)
     .six.columns
-      #street-view.wrapper
-        %a{href: "http://intergalactique.360degres.info/visite-virtuelle/", title: "Visite virtuelle du lieu.", target: "_blank"}
+      %a.limit{href: "http://intergalactique.360degres.info/visite-virtuelle/", title: "Visite virtuelle du lieu.", target: "_blank"}
+        #street-view.wrapper
           %img{src: "/images/visite_virtuelle.png", alt: "Logo de visite virtuelle du lieu."}
 
   .row
@@ -198,23 +198,23 @@ title: Maelström Lab
             %td Soirée, Concerts, Films...
             %td
               Soirée, Concerts, Films...
-    .raw
-      .twelves.columns
-        .warning-block
-          .warning-block-header
-            %img{src: "images/warning.svg", alt: "Warning"}
-          %h4 Les événements satellites du Maelström
-          %p
-            Si vous avez des envies, des idées, des propositions qui correspondent à la philosophie du maelström, nous proposons de diffuser et d'aider à l'organisation de rencontres, débats, initiations, ou ateliers divers.
-          %h4 Appel à projets
-          %p Contactez nous en précisant :
-          %ul
-            %li
-              la nature de ce que vous voulez partager, présenter (discussion, initiation à une technique, réflexion collective, atelier bricole...)
-            %li
-              la durée (entre une heure et une journée)
-            %li
-              le lieu (à domicile, dans un atelier, en extérieur..)
+    -# .raw
+    -#   .twelves.columns
+    -#     .warning-block
+    -#       .warning-block-header
+    -#         %img{src: "images/warning.svg", alt: "Warning"}
+    -#       %h4 Les événements satellites du Maelström
+    -#       %p
+    -#         Si vous avez des envies, des idées, des propositions qui correspondent à la philosophie du maelström, nous proposons de diffuser et d'aider à l'organisation de rencontres, débats, initiations, ou ateliers divers.
+    -#       %h4 Appel à projets
+    -#       %p Contactez nous en précisant :
+    -#       %ul
+    -#         %li
+    -#           la nature de ce que vous voulez partager, présenter (discussion, initiation à une technique, réflexion collective, atelier bricole...)
+    -#         %li
+    -#           la durée (entre une heure et une journée)
+    -#         %li
+    -#           le lieu (à domicile, dans un atelier, en extérieur..)
 
   .row
     .twelve.columns
@@ -249,23 +249,18 @@ title: Maelström Lab
         .line
 
   .row
-    .six.columns.offset-by-six.columns
-      %h3 Trousseau de survie
-
-  .row
-    .two.columns.pizza
-      .wrapper.border
-        %img{src: "images/figure_01.png", alt: "Illustration figure 1."}
-      .legend Figure.01
-    .two.columns.pizza
-      .wrapper.border
-        %img{src: "images/figure_02.png", alt: "Illustration figure 2."}
-      .legend Figure.02
-    .two.columns.pizza
-      .wrapper.border
-        %img{src: "images/figure_03.png", alt: "Illustration figure 3."}
-      .legend Figure.03
+    .three.columns
+      %a.limit{href: "http://www.maelstrom-lab.com/restitution/", target: "_blank"}
+        .wrapper
+          %img{src: "images/restitution.png", alt: "Restitution"}
+        .legend Restitution Maelstrom Lab #2
+    .three.columns
+      %a.limit{href: "http://www.maelstrom-lab.com/restitution/Fanzine_Maelstrom_2015.pdf", target: "_blank"}
+        .wrapper
+          %img{src: "images/fanzine.png", alt: "Fanzine"}
+        .legend Fanzine Maelstrom Lab #2
     .six.columns
+      %h3 Trousseau de survie
       %ul
         %li
           Trousse de toilette + serviette de bain + savon
@@ -300,8 +295,8 @@ title: Maelström Lab
         .link-legend
           (idées, questions, matériels, covoiturages, humeurs)
     .six.columns
-      .wrapper
-        %img{src: "images/photo_2.jpg", alt: "Atelier Epouvantail."}
+      .wrapper.limit
+        %img{src: "images/photo_2.jpg", alt: "Frrrrr"}
 
 
   .row
@@ -316,3 +311,5 @@ title: Maelström Lab
         %ul.contact-list
           %li.contact-email <a href="mailto:bonjour@maelstrom-lab.com">bonjour@maelstrom-lab.com</a>
           -# %li.contact-phone
+        .wrapper
+          %img{src: "images/photo_3.jpg", alt: "Gatô"}
