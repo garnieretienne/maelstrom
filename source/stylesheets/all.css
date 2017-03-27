@@ -101,7 +101,7 @@ hr {
 }
 
 .link > a {
-  color: black;
+  color: #252525;
   display: inline-block;
   background-color: yellow;
   padding: 0.2em 0.6em;
@@ -117,7 +117,7 @@ hr {
 }
 
 .subscribe-link > a {
-  color: white;
+  color: #EDEDED;
   text-transform: uppercase;
 }
 
@@ -263,6 +263,26 @@ td .note {
 .button-link:hover {
   background-color: inherit;
   border: 1px solid transparent;
+}
+
+ul#header-nav {
+  color: #EDEDED;
+  background-color: rgba(37, 37, 37, 0.9);
+  padding: 1em;
+  list-style: none;
+  text-align: center;
+  border: 2px solid #252525;
+}
+
+ul#header-nav > li {
+  display: inline-block;
+  padding: 0 0.8em;
+}
+
+ul#header-nav > li > a, ul#header-nav > li > a:visited {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 #header {
