@@ -4,27 +4,22 @@ title: Maelström Lab
 %ul#header-nav
 
   %li= link_to("Restitution 2015", "http://www.maelstrom-lab.com/restitution/")
+  %li= link_to("Fanzine 2015", "http://www.maelstrom-lab.com/restitution/Fanzine_Maelstrom_2015.pdf")
   %li= link_to("Restitution 2016", "http://www.maelstrom-lab.com/restitution_2016/")
+
+.container#header-container
+  .row
+    .twelve.columns
+      #header
+        %img{src: "images/header.jpg", alt: "Maelström Lab #4"}
 
 .container
 
   .row
     .twelve.columns
-      #header
-        %h1#logo
-          %img{src: "images/logo.png", alt: "Maelström Lab"}
-        .wrapper
-          #maelstrom-motto Échanges de savoir-faire et croisements de disciplines
-        .wrapper
-          #event-date
-            Les 5, 6, 7 et 8 mai 2016 À METTRAY
-        .wrapper
-          #event-motto
-            %img{src: "images/motto.gif", alt: "Maelström Lab"}
-
-  .row
-    .twelve.columns
-      %h3 Maelquoi ?
+      .h3-title
+        %h3 Maelquoi ?
+        .line
 
   .row
     .six.columns
@@ -43,34 +38,25 @@ title: Maelström Lab
       %p
         Il n'y a pas d'autres objectifs que l'esquisse et la tentative. L'aboutissement de ces projets ne sera pas une finalité recherchée : <b>le but se situant avant tout dans la réflexion et l'invention</b>. C'est dans un esprit DIY (Do It Yourself) à la campagne, dans le fait même de se retrouver quelques jours avec des inconnus, de mettre en pratique ses idées jamais tentées, de s’amuser que l'on essaiera de créer l’émulation et l’émulsion dans une effervescence créative et débrouillarde.
 
-  .row
+  .row.highlight-row
     .twelve.columns
       .wrapper
         %img{src: "images/photo_1.jpg", alt: "Work In Progress"}
-      .news
+      .highlight-content
+        .row
+          .h3-title
+            %h3 Ombres et Lumière
+            .line
         .row
           .six.columns
-            .news-title
-              Suite à l'explosion inaugurale de mai 2015, détonation qui donna lieu à une seconde secousse non moins forte en octobre de la même année, le Maelström Lab revient.
             %p
-              Le futur est de retour et puisque jusqu'à présent il n'existe pas, à nous de l'inventer avant qu'il ne soit passé.
-              Le Maelström fait son retour pour une 3ème édition et c'est le futur qui s'ouvre à nous en ce mois de Mai 2016. Venez le créer, le vivre, le chanter, le jouer, le faire parler comme bon vous semble!
           .six.columns
             %p
-              Soudons contre le futur / Réfléchissons avec le futur / Dormons malgré le futur / Revenons sur le futur / Creusons dans le futur.
-            %p
-              Vous avez le choix, rien n'est établi ! Matière, talent, savoir ou curiosité tous les prétextes sont bons pour générer des envies et des questions, s'approcher d'ondes idéologiques ou techniques qui pourrait en inspirer plus d'un...
-              Si ce qui a été ne peut plus désormais ne pas avoir été alors ce qui va être est entièrement à vivre et à penser.
-
-      %hr
-      .step
-        .text Étape.00
-        .line
 
   .row
     .eight.columns
       %h4 Schéma des croisements
-      %p Proposition de pôles à organiser et désorganiser selon les usages :
+      .note Proposition de pôles à organiser et désorganiser selon les usages :
       #schema.wrapper.limit
         %img{src: "images/schema_des_croisements.png", alt: "Proposition de pôles à organiser et désorganiser selon les usages."}
     .four.columns
@@ -86,64 +72,65 @@ title: Maelström Lab
       %h4 Et en terme de logistique ?
       %p
         Chacun ramène ce qu'il peut comme outils ou matériaux. Il y aura déjà beaucoup de choses sur place pour ceux qui ne peuvent rien apporter. N'hésitez pas à partager en amont vos plans "récup". Une commission repas est en cours d'organisation, libre à vous de vous inscrire dessus. L'hébergement se fait sur place, penser à ramener camion, tente et/ou matelas (possibilité de dortoir).
-      .notice-block-1 Suivre les chapitres détaillés ci-dessous.
 
   .row
     .twelve.columns
-      %hr
-      .step
-        .text Étape.01
-        .line
-      %h3 Ou ?
+      .wrapper#ou-quand-comment
+        %img{src: "images/ou_quand_comment.jpg", alt: "Ou, Quand, Comment?"}
 
   .row
     .six.columns
-      %h4 La barre, Mettray (37)
+      .h3-title
+        %h3 Ou!
+        .line
       %p Dans un domaine avec petite cuisine et grandes dépendances (grange, hangars, barnums selon la météo, forêt et lac), plusieurs espaces dédiés aux divers ateliers.
       #plan.wrapper
         %a{href: "https://www.google.fr/maps/place/La+Barre,+37390/@47.4542814,0.659999,15z/data=!3m1!4b1!4m2!3m1!1s0x47e32aa928e973cf:0x6a6c66cba7dc6459?hl=en", title: "Plan Google Maps", target: "_blank"}
           %img#plan-map{src: "images/plan.png", alt: "Plan du site."}
       %a{href: "https://www.google.fr/maps/place/La+Barre,+37390/@47.4542814,0.659999,15z/data=!3m1!4b1!4m2!3m1!1s0x47e32aa928e973cf:0x6a6c66cba7dc6459?hl=en", title: "Plan Google Maps", class: "button-link"}
         Plan Google Maps
-      %h5 Comment venir?
-      %ul
-        %li Covoiturage
-        %li Depuis Tours centre : Tram + Bus (<a href="https://www.filbleu.fr/images/infosvoyageurs/ficheslignes/reseau_hiver_fev_2016/Bus_52.pdf" title="Information Fil-Bleu ligne 52" target="_blank">ligne 52</a>)
+      %a{href: "https://www.filbleu.fr/images/infosvoyageurs/ficheslignes/reseau_sept_2016/Bus_52.pdf", title: "Lien Fil Bleu", class: "button-link"}
+        Ligne 52 depuis Tours
     .six.columns
-      %a.limit{href: "http://intergalactique.360degres.info/visite-virtuelle/", title: "Visite virtuelle du lieu.", target: "_blank"}
-        #street-view.wrapper
-          %img{src: "/images/visite_virtuelle.png", alt: "Logo de visite virtuelle du lieu."}
-
-  .row
-    .twelve.columns
-      %hr
-      .step
-        .text Étape.02
+      .h3-title
+        %h3 Comment!
         .line
-      %h3 Quand ?
+      %p
+        Le jeudi midi, chacun ramène sa spécialité ou son kiffe culinaire pour un repas en commun convivial.
+      %p
+        Une prise en charge des repas du jeudi soir au dimanche midi (avec petit-dej et goûter) est prévue. Pour cela une participation de 5 euros par repas est demandée (cela inclus la nourriture et les frais divers engendrés par l'événement).
+      %p
+        Pour rester dans la philosophie de l'évènement, les repas seront réalisés par les participants (matériel et courses sur place).
+        Les inscriptions auront lieu lors des assemblées du matin.
+        Nous nous efforçons au maximum de choisir des produits locaux. Les repas sont majoritairement végétariens.
+      %p
+        Concernant l'hébergement, il peut se faire sur place. Le site de 10 hectares comporte un espace de camping  et un grenier qui pourra faire office de dortoir.
+        Munissez vous de vos tentes, camions ou matelas.
+      %a{href: "http://intergalactique.360degres.info/visite-virtuelle/", target: "_blank"}
+        .wrapper
+          %img{src: "images/visite_virtuelle.jpg", alt: "Lien vers la visite virtuelle du lieu"}
 
   .row
     .twelve.columns
+      .h3-title#agenda
+        %h3 Quand!
+        .line
       %p
-        Du <u>5 au 8 Mai 2016</u>.
+        Du <u>25 au 28 Mai 2017</u>.
         %br
         Le site reste ouvert en visite libre durant l'évènement.
       .table-wrapper
         %table
           %tr
-            %th Jeudi
-            %th.highlight
-              Vendredi
-              .note Journée inversée
-            %th.highlight
-              Samedi
-              .note Journée insolente
-            %th.highlight
-              Dimanche
-              .note Journée futur
+            %th.highlight Jeudi
+            %th.highlight Vendredi
+            %th.highlight Samedi
+            %th.highlight Dimanche
           %tr
             %td
-
+              %b OUVERTURE
+              .time 9h30
+              Accueil, Assemblée, Installation, Visite
             %td
               Repas du soir
               .time 9h30
@@ -157,8 +144,9 @@ title: Maelström Lab
               .time 9h30
               Assemblée, Échanges de savoir-faire et croisements de disciplines
           %tr
-            %td
-
+            %td.notice-3
+              .time 12h30
+              Pique-nique participatif
             %td.notice-2
               .time 12h30
               Repas du midi
@@ -171,149 +159,54 @@ title: Maelström Lab
           %tr
             %td
               .time 14h00
-              %b OUVERTURE
-              %br
-              Accueil, Installation, Visite
+              Échanges de savoir-faire et croisements de disciplines
             %td
               .time 14h00
-              Assemblée, Échanges de savoir-faire et croisements de disciplines
+              Échanges de savoir-faire et croisements de disciplines
             %td
               .time 14h00
-              Assemblée, Échanges de savoir-faire et croisements de disciplines
+              Échanges de savoir-faire et croisements de disciplines
             %td
               .time 14h00
-              Concours de Mr Gatô,
-              %br
-              Time Capsule,
-              %br
               Rangement
           %tr
-            %td.notice-3
-              .time 19h00
-              Pique-nique participatif
             %td.notice-1
               .time 19h00
-              Petit Déjeuner
+              Repas du soir
             %td.notice-1
               .time 19h00
-              Repas insolent
+              Repas du soir
+            %td.notice-1
+              .time 19h00
+              Repas du soir
           %tr
-            %td Soirée
             %td Soirée, Concerts, Films...
-            %td
-              Soirée, Concerts, Films...
-    -# .raw
-    -#   .twelves.columns
-    -#     .warning-block
-    -#       .warning-block-header
-    -#         %img{src: "images/warning.svg", alt: "Warning"}
-    -#       %h4 Les événements satellites du Maelström
-    -#       %p
-    -#         Si vous avez des envies, des idées, des propositions qui correspondent à la philosophie du maelström, nous proposons de diffuser et d'aider à l'organisation de rencontres, débats, initiations, ou ateliers divers.
-    -#       %h4 Appel à projets
-    -#       %p Contactez nous en précisant :
-    -#       %ul
-    -#         %li
-    -#           la nature de ce que vous voulez partager, présenter (discussion, initiation à une technique, réflexion collective, atelier bricole...)
-    -#         %li
-    -#           la durée (entre une heure et une journée)
-    -#         %li
-    -#           le lieu (à domicile, dans un atelier, en extérieur..)
+            %td Soirée, Concerts, Films...
+            %td Soirée, Concerts, Films...
 
-  .row
+  .row.highlight-row#footer
     .twelve.columns
-      %hr
-      .step
-        .text Étape.03
-        .line
-      %h3 Comment Manger ?
-
-  .row
-    .six.columns
-      %p
-        Le jeudi soir, chacun ramène sa spécialité ou son kiffe culinaire pour un repas en commun convivial.
-      %p
-        Une prise en charge des repas du vendredi matin au dimanche midi (avec petit-dej et goûter) est prévue. Pour cela une participation de 5 euros par repas est demandée (cela inclus la nourriture et les frais divers engendrés par l'événement).
-      %p
-        Pour rester dans la philosophie de l'évènement, les repas seront réalisés par les participants (matériel et courses sur place).
-        Les inscriptions auront lieu lors des assemblées du matin.
-        Nous nous efforçons au maximum de choisir les produits de nos amis maraîchers. Les repas sont majoritairement végétariens.
-    .six.columns
-      .notice-block-2
-        %h4 Hébergement
-        %p
-          Le site de 10 hectares comporte un espace de camping  et un grenier qui pourra faire office de dortoir.
-          Munissez vous de vos tentes, camions ou matelas.
-
-  .row
-    .twelve.columns
-      %hr
-      .step
-        .text Étape.04
-        .line
-
-  .row
-    .three.columns
-      %a.limit{href: "http://www.maelstrom-lab.com/restitution/", target: "_blank"}
-        .wrapper
-          %img{src: "images/restitution.png", alt: "Restitution"}
-        .legend Restitution Maelstrom Lab #2
-    .three.columns
-      %a.limit{href: "http://www.maelstrom-lab.com/restitution/Fanzine_Maelstrom_2015.pdf", target: "_blank"}
-        .wrapper
-          %img{src: "images/fanzine.png", alt: "Fanzine"}
-        .legend Fanzine Maelstrom Lab #2
-    .six.columns
-      %h3 Trousseau de survie
-      %ul
-        %li
-          Trousse de toilette + serviette de bain + savon
-          (type savon de marseille ou savon noir car douche en extérieur et évacuation dans la nature).
-        %li Matelas avec duvet, tente ou camion pour dormir.
-        %li Bottes, K-way et maillot de bain.
-        %li Outils, récupération de matériel, petits outillages divers à mettre en commun.
-        %li Bonne humeur et convivialité.
-        %li ...
-
-  .row
-    .twelve.columns
-      %hr
-      .step
-        .text Étape.05
-        .line
-      %h3
-        Inscription (obligatoire)
-
-  .row
-    .six.columns
-      .warning-group-wrapper
-        .warning-wrapper
-          .warning
-            Évènement limité à 60 personnes.
-      %p.subscribe-link
-        %a{href: "https://docs.google.com/forms/d/1sWQwnVWEzg_pG-cgOGtUlbrtk-kMPd4lXtCJTpVaSZ0/viewform?c=0&w=1"} >> Lien vers le formulaire d'inscription <<
-      .link
-        %a{href: "https://lite6.framapad.org/p/Participants_Maelstrom_Lab", target: "_blank"} >> Lien de Présentation des inscrits <<
-      .link
-        %a{href: "https://lite6.framapad.org/p/discussions_du_maelstrom_lab", target: "_blank"} >> Lien de Discussions <<
-        .link-legend
-          (idées, questions, matériels, covoiturages, humeurs)
-    .six.columns
-      .wrapper.limit
-        %img{src: "images/photo_2.jpg", alt: "Frrrrr"}
-
-
-  .row
-    .twelve.columns
-      %hr
-      .step
-        .text Étape.06
-        .line
-      #footer
-        %h3 Comment nous joindre ?
-        %p Si vous avez des questions, n'hésitez pas à nous contacter, on sera ravi de vous répondre.
-        %ul.contact-list
-          %li.contact-email <a href="mailto:bonjour@maelstrom-lab.com">bonjour@maelstrom-lab.com</a>
-          -# %li.contact-phone
-        .wrapper
-          %img{src: "images/photo_3.jpg", alt: "Gatô"}
+      .wrapper
+        %img{src: "images/photo_2.jpg", alt: "Work In Progress"}
+      .highlight-content
+        .row
+          .six.columns
+            %h3 Inscription
+            .important Évènement limité à 60 personnes.
+            .link.subscribe-link
+              %a{href: "https://goo.gl/forms/yezzrTuDgnidZIC82", target: "_blank"} Lien vers le formulaire d'inscription
+            .link
+              %a{href: "https://annuel.framapad.org/p/MaelstromLab4Members", target: "_blank"} Lien de présentation des inscrits
+            .link
+              %a{href: "https://annuel.framapad.org/p/MaelstromLab4Discuss", target: "_blank"}
+                Lien de discussions
+                .note (idées, questions, covoiturages, humeurs, etc...)
+          .six.columns
+            %h3 Nous joindre
+            %p Si vous avez des questions, n'hésitez pas à nous contacter, on sera ravi de vous répondre.
+            .email-link
+              %a{href: "mailto:bonjour@maelstrom-lab.com"} bonjour@maelstrom-lab.com
+            #easteregg
+              %img{src: "images/smile.jpg", alt: "Easter Egg"}
+      .wrapper
+        %img{src: "images/photo_3.jpg", alt: "Work In Progress"}
