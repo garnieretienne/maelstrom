@@ -3,9 +3,20 @@ title: Maelström Lab
 ---
 %ul#header-nav
 
-  %li= link_to("Restitution 2015", "http://www.maelstrom-lab.com/restitution/")
-  %li= link_to("Fanzine 2015", "http://www.maelstrom-lab.com/restitution/Fanzine_Maelstrom_2015.pdf")
-  %li= link_to("Restitution 2016", "http://www.maelstrom-lab.com/restitution_2016/")
+  %li
+    %em 2015:
+    = link_to("Maelstrom Lab #1", "/website_maelstrom_lab_1/")
+    |
+    = link_to("Maelstrom Lab #2", "/website_maelstrom_lab_2/")
+    |
+    = link_to("Restitution #2", "/restitution_maelstrom_lab_2/")
+    |
+    = link_to("Fanzine #2", "/Fanzine_Maelstrom_2015.pdf")
+  %li
+    %em 2016:
+    = link_to("Maelstrom Lab #3", "/website_maelstrom_lab_3/")
+    |
+    = link_to("Restitution #3", "/restitution_2016/")
 
 .container#header-container
   .row
@@ -57,7 +68,7 @@ title: Maelström Lab
     .eight.columns
       %h4 Schéma des croisements
       .note Proposition de pôles à organiser et désorganiser selon les usages :
-      #schema.wrapper.limit
+      #schema.wrapper
         %img{src: "images/schema_des_croisements.png", alt: "Proposition de pôles à organiser et désorganiser selon les usages."}
     .four.columns
       %h4 Comment ça marche ?

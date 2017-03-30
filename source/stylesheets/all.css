@@ -170,12 +170,6 @@ td .note {
   width: 100%;
 }
 
-.limit {
-  display: block;
-  max-width: 50%;
-  margin: auto;
-}
-
 .border {
   border: 1px solid #000000;
 }
