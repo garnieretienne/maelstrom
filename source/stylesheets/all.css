@@ -104,7 +104,7 @@ th {
 }
 
 th.highlight {
-  background-color: rgba(255, 85, 39, 0.6);
+  background-color: rgba(255, 85, 39, 0.8);
 }
 
 th .note {
@@ -133,18 +133,21 @@ td:last-child, th:last-child {
 td.notice-1 {
   text-transform: uppercase;
   background-color: #DEDBD6;
+  background-color: rgba(255, 85, 39, 0.2);
   text-align: center;
 }
 
 td.notice-2 {
   text-transform: uppercase;
   background-color: #BBF8D5;
+  background-color: rgba(255, 85, 39, 0.6);
   text-align: center;
 }
 
 td.notice-3 {
   text-transform: uppercase;
   background-color: #FBFF9E;
+  background-color: rgba(255, 85, 39, 0.4);
   text-align: center;
 }
 
